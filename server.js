@@ -13,7 +13,7 @@ var titles=[];
 
 var server = http.createServer( (req, res) => {
 
-    if (req.method == 'GET') {
+    if (req.method === 'GET') {
 
         async.waterfall([
             function getQueryParamFunc(callback)
